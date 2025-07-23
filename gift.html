@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HappyBdayBestoo❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Countdown first -->
+  <div id="countdown">3</div>
+
+  <!-- Hidden surprise section -->
+  <section id="sec1" style="display: none;">
+    <img src="img1.jpg" alt="bday image">
+    <p>enti chustunav nene🐒<br>avnu i am the biggest surprise for u✨<br>gift adhurs kadu😅</p>
+    <button onclick="home()">home</button>
+  </section>
+
+  <script>
+    let count = 3;
+    const countdown = document.getElementById("countdown");
+    const sec1 = document.getElementById("sec1");
+
+    const interval = setInterval(() => {
+      count--;
+      if (count > 0) {
+        countdown.textContent = count;
+      } else {
+        clearInterval(interval);
+        countdown.style.display = "none";
+        sec1.style.display = "block";
+      }
+    }, 1000);
+
+    
+  </script>
+
+</body>
+</html>

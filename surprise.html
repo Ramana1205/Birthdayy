@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3 Gift Boxes with Surprise</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 50px 0;
+      background: linear-gradient(-45deg, #ff4b2b, #ff416c, #1e90ff, #00f2fe);
+      background-size: 400% 400%;
+      animation: gradientMove 5s ease infinite;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .gift-wrap {
+      perspective: 1000px;
+    }
+
+    .gift-box {
+      width: 120px;
+      height: 120px;
+      background: #fff;
+      border-radius: 10px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+      cursor: pointer;
+    }
+
+    .gift-box .front, .gift-box .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+    }
+
+    .gift-box .front {
+      background: #fff;
+      color: #e91e63;
+    }
+
+    .gift-box .back {
+      background: #1d2b64;
+      color: white;
+      transform: rotateY(180deg);
+      font-size: 16px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .gift-wrap.flip .gift-box {
+      transform: rotateY(180deg);
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+    <h1 style="color:#040404; font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color:white;"> 🎉 Happy Birthday, Bestie!<br>  
+          You're the sparkle in every moment! ✨💖</h1>
+
+  <h2>🎁 Tap the Gift to Reveal Your Surprise! 🎊</h2>
+
+  <div class="container">
+    
+    <div class="gift-wrap" onclick="this.classList.toggle('flip')">
+      <div class="gift-box">
+        <div class="front">🎁</div>
+        <div class="back">
+            Wrong Gift box<br> try again!!👎
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="gift-wrap"onclick="this.classList.toggle('flip')">
+      <div class="gift-box">
+        <div class="front">🎁</div>
+        <div class="back">
+             Wrong Gift box<br> try again!!😅
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="gift-wrap" onclick="gift()">
+      <div class="gift-box">
+        <div class="front">🎁</div>
+        <div class="back">
+         
+        </div>
+      </div>
+    </div>
+     <div class="gift-wrap"onclick="this.classList.toggle('flip')">
+      <div class="gift-box">
+        <div class="front">🎁</div>
+        <div class="back">
+             Wrong Gift box<br> try again!!😅
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
