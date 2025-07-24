@@ -5,7 +5,9 @@ body {
   background-size: 400% 400%;
   animation: gradientMove 5s ease infinite;
   text-align: center;
+  
 }
+
 
 @keyframes gradientMove {
   0% {
@@ -91,12 +93,19 @@ strong{
   }
 
   input {
-    width: 80%;
+    width: 50%;
     margin-bottom: 10px;
   }
 
   strong {
     font-size: 20px;
+  }
+  button {
+    font-size: 8px;
+    padding: 3px 3px;
+    margin-bottom:3px;
+    width:fit-content;
+    height: fit-content;
   }
 }
 
@@ -113,7 +122,7 @@ strong{
   }
 
   input {
-    width: 100%;
+    width: 50%;
     font-size: 14px;
   }
 
@@ -122,12 +131,24 @@ strong{
   }
 
   button {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 10px;
+    padding: 5px 8px;
+    margin-bottom:8px;
+    width:fit-content;
+    height: fit-content;
   }
+  img{
+    width:90%;
+    height: auto;
+  }
+  
 }
 button {
-    padding: 10px 20px;
+  font-size: 14px;
+  margin-bottom:5px;
+  width:fit-content;
+    height: fit-content;
+    padding: 8px 16px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -135,30 +156,11 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-img{
-    height: 500px;
-   
-}
+
 #countdown {
       font-size: 100px;
       margin-top: 200px;
     }
-#sec1{
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, #e00c4b, #1d2b64);
-    color:white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-#sec1:hover {
-      z-index: 999;
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
+
 
    
