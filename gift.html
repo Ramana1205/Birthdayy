@@ -7,23 +7,28 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <style>
-       img{
+           img{
    width:60%;
    height:70%;
    
 }
-#sec1{
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: white;
+}
+
+#sec1 {
     width: 45%;
-    height:85%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 20px;
-    margin-bottom:20px;
+    max-width: 600px;
+    height: auto; /* Let content define the height */
+    margin: 40px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-image: linear-gradient(to right, #e00c4b, #1d2b64);
-    color:white;
+    color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
@@ -36,17 +41,9 @@
   height:100%;
   width:100%;
 }
-p{
-    font-size: 8px;
-    line-height: 1.5;
-    margin-top: 5px;
-    color: white;
-}
+
 @media (max-width: 480px) {
-    p{
-        font-size: 10px;
-        line-height: 1.2;
-    }
+    
     img{
         width: 80%;
         height: auto;
@@ -56,6 +53,12 @@ p{
         height: auto;
         padding: 10px;
     }
+    p{
+    font-size: 8px;
+    line-height: 1.5;
+    margin-top: 5px;
+    color: white;
+}}
     </style>
 </head>
 <body>
